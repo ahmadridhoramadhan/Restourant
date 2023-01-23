@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .aboutPage-container-for-grid {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr 1.2fr;
+        grid-template-rows: 1fr 0.5fr 1.9fr 0.6fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". . ."
+            "Title-of-Company Title-of-Company Random-Image"
+            "description description Random-Image"
+            "description description Random-Image"
+            ". . .";
+    }
+                
+    .aboutPage-Title-of-Company {
+        grid-area: Title-of-Company;
+    }
+                
+    .aboutPage-description {
+        grid-area: description;
+    }
+                
+    .aboutPage-Random-Image {
+        grid-area: Random-Image;
+    }
+
+        .chefPage-container-for-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "chef1 chef1 chef1 chef1"
+                "chef1 chef1 chef1 chef1"
+                "chef2 chef2 chef2 chef2"
+                "chef2 chef2 chef2 chef2";
+        }
+    
+        .chefPage-chef1 {
+            display: grid;
+            grid-template-columns: 0.3fr 1.1fr 0.2fr 1.8fr 0.2fr 2.4fr 1fr 1fr;
+            grid-template-rows: 1fr 0.7fr 1.3fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                ". . . . . . . ."
+                ". chef1-Image . chef1-Name chef1-Name chef1-Name . ."
+                ". chef1-Image . chef1-Information . chef1-description chef1-description ."
+                ". chef1-Image . chef1-Information . chef1-description chef1-description ."
+                ". . . . . . . .";
+            grid-area: chef1;
+        }
+    
+        .chefPage-chef1-Image {
+            grid-area: chef1-Image;
+        }
+    
+        .chefPage-chef1-Name {
+            grid-area: chef1-Name;
+        }
+    
+        .chefPage-chef1-Information {
+            grid-area: chef1-Information;
+        }
+    
+        .chefPage-chef1-description {
+            grid-area: chef1-description;
+        }
+    
+        .chefPage-chef2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2.8fr 0.2fr 1.8fr 0.2fr 1.1fr 0.3fr;
+            grid-template-rows: 1.2fr 0.8fr 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                ". . . . . . . ."
+                ". . chef2-Name chef2-Name chef2-Name . chef2-Image ."
+                ". chef2-description chef2-description . chef2-information . chef2-Image ."
+                ". chef2-description chef2-description . chef2-information . chef2-Image ."
+                ". . . . . . . .";
+            grid-area: chef2;
+        }
+    
+        .chefPage-chef2-Image {
+            grid-area: chef2-Image;
+        }
+    
+        .chefPage-chef2-Name {
+            grid-area: chef2-Name;
+        }
+    
+        .chefPage-chef2-information {
+            grid-area: chef2-information;
+        }
+    
+        .chefPage-chef2-description {
+            grid-area: chef2-description;
+        }
+}
