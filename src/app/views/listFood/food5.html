@@ -1,181 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lorisv Restaurant</title>
-        <link rel="stylesheet" href="/src/css/main.css" />
-        <style>
-            body {
-                background-image: url("/src/asset/bg/bg-food1.png");
-                background-repeat: no-repeat;
-            }
-            main {
-                background-image: url("/src/asset/bg/bg-food2.png");
-                background-repeat: no-repeat;
-                background-position: bottom right;
-                background-size: contain;
-            }
-        </style>
-    </head>
-    <body class="flex flex-col h-screen bg-half">
-        <nav class="flex-none">
-            <div class="flex max-w-7xl mx-auto sm:my-5 items-center">
-                <a href="/index.html">
-                    <img src="" alt="logo" class="h-6 sm:h-7 inline" />
-                </a>
 
-                <div class="flex justify-center items-center flex-1 gap-5">
-                    <a href="../../index.html">About</a>
-                    <div>
-                        <a href="">List Food</a>
-                        <div class="bg-orange-600 h-0.5 w-full"></div>
-                    </div>
-                    <a href="/src/views/chef.html">Chef</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorisv Restaurant</title>
+    <link rel="stylesheet" href="/src/app/css/main.css" />
+</head>
+
+<body class="flex flex-col h-screen bg-half">
+    <header>
+        <section id="desktopNavbar" class="hidden md:block">
+            <div class="relative flex items-center pt-5">
+                <div class="absolute ml-5 mt-5">
+                    <img src="" alt="logo" class="h-14 w-14" />
                 </div>
-            </div>
-        </nav>
-
-        <main class="flex-auto">
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
-                <div id="displayContent" class="flex-auto">
-                    <div class="max-w-6xl sm:pt-28 mt-12 md:pt-32 md:pl-28 p-5">
-                        <div class="flex flex-col md:flex-row items-center">
-                            <img
-                                src="/src/asset/food/bigFood5.png"
-                                alt=""
-                                class="md:h-80 h-60 sm:h-72 flex-none mb-5" />
+                <nav class="flex-auto">
+                    <ul class="flex select-none flex-row justify-center gap-10">
+                        <li>
+                            <a href="/index.html"
+                                class="text-slate-600 transition-all hover:text-lg hover:font-semibold hover:text-slate-900">About</a>
+                        </li>
+                        <li class="relative">
                             <div>
-                                <p class="font-semibold italic text-4xl">
-                                    the title of food
-                                </p>
-                                <p class="pl-3">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Ut magnam omnis nulla iure
-                                    maiores suscipit, voluptatem quo aspernatur
-                                    dolores aut nobis ratione molestiae,
-                                    doloremque dicta saepe asperiores. Ducimus
-                                    magni architecto iusto itaque! Libero ipsa
-                                    voluptas, aspernatur delectus quisquam
-                                    repellat, et corporis culpa, cupiditate
-                                    iusto nostrum asperiores dolore sunt esse
-                                    consectetur itaque error placeat debitis
-                                    voluptate. Est soluta enim obcaecati minus
-                                    rerum consequatur vitae odio eligendi sit!
-                                    Nobis iusto autem sit?
-                                </p>
+                                <button data-collapse="true" id="buttonDesktopDropdownMenu"
+                                    class="text-slate-600 transition-all hover:text-lg hover:font-semibold hover:text-slate-900">
+                                    Menu
+                                    <span class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor"
+                                            class="inline h-4 w-4 DropdownLogo transition-all">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                                        </svg>
+                                    </span>
+                                </button>
                             </div>
+                            <nav id="contentDropdownFoodDesktop"
+                                class="hidden comment-shape absolute -left-full top-12 w-96 rounded-xl bg-slate-100 py-3 px-5">
+                                <ul class="">
+                                    <li
+                                        class="border-b-2 border-black/50 py-3 px-5 transition-all duration-300 hover:bg-slate-200 hover:text-lg">
+                                        <a href="/src/app/views/listFood/food1.html">
+                                            <img src="/src/assets/food/food1.png" alt="food"
+                                                class="mr-4 inline-block w-14 " />
+                                            <span class="">
+                                                asdfasdasd
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="border-b-2 border-black/50 py-3 px-5 transition-all duration-300 hover:bg-slate-200 hover:text-lg">
+                                        <a href="/src/app/views/listFood/food2.html">
+                                            <img src="/src/assets/food/food2.png" alt="food"
+                                                class="mr-4 inline-block w-14" />
+                                            <span class="">
+                                                asdfasdasd
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="border-b-2 border-black/50 py-3 px-5 transition-all duration-300 hover:bg-slate-200 hover:text-lg">
+                                        <a href="/src/app/views/listFood/food3.html">
+                                            <img src="/src/assets/food/food3.png" alt="food"
+                                                class="mr-4 inline-block w-14" />
+                                            <span class="">
+                                                asdfasdasd
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="border-b-2 border-black/50 py-3 px-5 transition-all duration-300 hover:bg-slate-200 hover:text-lg">
+                                        <a href="/src/app/views/listFood/food4.html">
+                                            <img src="/src/assets/food/food4.png" alt="food"
+                                                class="mr-4 inline-block w-14" />
+                                            <span class="">
+                                                asdfasdasd
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class=" py-3 px-5 transition-all duration-300 bg-slate-200 text-lg rounded-b-lg">
+                                        <a href="/src/app/views/listFood/food5.html">
+                                            <img src="/src/assets/food/food5.png" alt="food"
+                                                class="mr-4 inline-block w-14" />
+                                            <span class="border-b-2 border-orange-600 px-3">
+                                                asdfasdasd
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href="/src/app/views/chef.html"
+                                class="text-slate-600 transition-all hover:text-lg hover:font-semibold hover:text-slate-900">Chef</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="mobileNavbar" class="mb-5 md:hidden">
+            <div class="flex items-center justify-between border-b-2 border-black px-5 py-2">
+                <div>logo</div>
+                <button id="buttonBurgerDropdown" data-collapse="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-12 w-12">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav id="contentBurgerDropdown" class="bg-slate-100 hidden">
+                <ul class="">
+                    <li
+                        class="border-b-2 border-black/30 py-2 px-10 transition-all hover:bg-slate-200 hover:text-lg hover:text-gray-900">
+                        <a href="/index.html" class="text-gray-600">About</a>
+                    </li>
+
+                    <li class="border-b-2 border-black/30 py-2 px-10 transition-all hover:bg-slate-200">
+                        <div class="flex items-center justify-between transition-all hover:text-lg hover:text-gray-900">
+                            <button data-collapse="true" class="text-gray-900" id="buttonMobileDropdownFood">
+                                Menu
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="inline h-4 w-4 DropdownLogo transition-all">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </button>
                         </div>
 
-                        <div class="mt-5 w-full flex">
-                            <a
-                                href="/src/views/paymentPage.html"
-                                class="ml-auto bg-blue-500 hover:bg-blue-700 py-2 px-5 text-white shadow-lg rounded-md transition-colors duration-300">
-                                Buy This
-                            </a>
+                        <nav id="contentDropdownFoodMobile" class="rounded-lg hidden">
+                            <ul class="border-black/50">
+                                <li
+                                    class="rounded-t-lg border-b-2 border-black/50 px-3 py-2 transition-all hover:bg-slate-300 hover:text-lg hover:text-gray-900">
+                                    <a href="/src/app/views/listFood/food1.html"
+                                        class="flex items-center justify-between">
+                                        <span class="">asdfasfd</span>
+                                        <img src="/src/assets/food/food1.png" alt="food1"
+                                            class="inline-block h-12 w-12" />
+                                    </a>
+                                </li>
+                                <li
+                                    class="rounded-t-lg border-b-2 border-black/50 px-3 py-2 transition-all hover:bg-slate-300 hover:text-lg hover:text-gray-900">
+                                    <a href="/src/app/views/listFood/food2.html"
+                                        class="flex items-center justify-between">
+                                        <span>asdfasfd</span>
+                                        <img src="/src/assets/food/food2.png" alt="food1"
+                                            class="inline-block h-12 w-12" />
+                                    </a>
+                                </li>
+                                <li
+                                    class="rounded-t-lg border-b-2 border-black/50 px-3 py-2 transition-all hover:bg-slate-300 hover:text-lg hover:text-gray-900">
+                                    <a href="/src/app/views/listFood/food3.html"
+                                        class="flex items-center justify-between">
+                                        <span class="">asdfasfd</span>
+                                        <img src="/src/assets/food/food3.png" alt="food1"
+                                            class="inline-block h-12 w-12" />
+                                    </a>
+                                </li>
+                                <li
+                                    class="rounded-t-lg border-b-2 border-black/50 px-3 py-2 transition-all hover:bg-slate-300 hover:text-lg hover:text-gray-900">
+                                    <a href="/src/app/views/listFood/food4.html"
+                                        class="flex items-center justify-between">
+                                        <span>asdfasfd</span>
+                                        <img src="/src/assets/food/food4.png" alt="food1"
+                                            class="inline-block h-12 w-12" />
+                                    </a>
+                                </li>
+                                <li class="rounded-b-lg px-3 py-2 bg-slate-300 hover:text-lg text-gray-900">
+                                    <a href="/src/app/views/listFood/food5.html"
+                                        class="flex items-center justify-between">
+                                        <span
+                                            class="inline-block border-b-2 border-orange-500 px-2 transition-all">asdfasfd</span>
+                                        <img src="/src/assets/food/food5.png" alt="food1"
+                                            class="inline-block h-12 w-12" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+
+                    <li
+                        class="border-b-2 border-black/30 py-2 px-10 transition-all hover:bg-slate-200 hover:text-lg hover:text-gray-900">
+                        <a href="/src/app/views/chef.html" class="text-gray-600">Chef</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main class="flex-auto max-w-7xl mx-auto">
+        <div class="flex h-full justify-center md:items-center">
+            <div class="p-5">
+                <div class="block justify-between gap-5 xl:flex">
+                    <div class="flex flex-auto flex-col">
+                        <img src="/src/assets/food/bigFood5.png" alt=""
+                            class="mx-auto h-48 w-48 max-w-sm rounded-full xl:h-80 xl:w-80" />
+                        <div class="flex justify-between p-3 xl:hidden">
+                            <div>
+                                <div class="ml-3 text-2xl font-semibold italic">food5</div>
+                                <div class="ml-4 text-sm">Rp 80.000,00</div>
+                            </div>
+                            <div><button
+                                    class="rounded-lg bg-orange-400 px-4 py-2 transition-all hover:bg-orange-500 hover:text-white">Buy
+                                    This</button></div>
                         </div>
+                    </div>
+
+                    <div class="">
+                        <div class="xl:flex justify-between mb-5  hidden">
+                            <div>
+                                <div class="-ml-7 text-4xl font-semibold">food5</div>
+                                <div class="-ml-4 text-sm">Rp 80.000,00</div>
+                            </div>
+                            <div><button
+                                    class="rounded-lg bg-orange-400 px-4 py-2 transition-all hover:bg-orange-500 hover:text-white">Buy
+                                    This</button></div>
+                        </div>
+                        <p class="text-justify xl:max-w-3xl text-lg">orem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit.
+                            Eius
+                            itaque maxime nihil architecto modi pariatur esse reiciendis impedit labore nam odio
+                            consequatur,
+                            similique ab ad. Autem a commodi in, facilis numquam animi sunt harum cumque consectetur
+                            officiis
+                            quo porro cupiditate, molestiae fugiat tempore cum? Blanditiis impedit facilis soluta veniam
+                            eligendi! Dolore, fugit assumenda quo minus tempora praesentium? Assumenda minima quo hic
+                            eos nulla
+                            non optio veritatis perspiciatis? Optio minus error consequuntur soluta, provident totam
+                            sequi enim
+                            nostrum aliquid quo voluptatibus repudiandae suscipit cum reprehenderit distinctio? Eum
+                            eveniet
+                            ipsam cumque, soluta consectetur ratione sed, illo quasi assumenda aliquid eaque explicabo
+                            recusandae.</p>
                     </div>
                 </div>
 
-                <div
-                    class="flex md:flex-col justify-center h-full flex-none select-none">
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/listFood.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food1.html">
-                            <img
-                                src="/src/asset/food/food1.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food2.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food2.html">
-                            <img
-                                src="/src/asset/food/food2.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food3.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food3.html">
-                            <img
-                                src="/src/asset/food/food3.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food4.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food4.html">
-                            <img
-                                src="/src/asset/food/food4.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food5.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food5.html">
-                            <img
-                                src="/src/asset/food/food5.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
+                <div class="block justify-between gap-5 sm:flex sm:p-5">
+                    <p class="mt-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque
+                        maxime
+                        nihil architecto modi pariatur esse reiciendis impedit labore nam odio consequatur, similique ab
+                        ad.
+                        Autem a commodi in, facilis numquam animi sunt harum cumque consectetur officiis quo porro
+                        cupiditate,
+                        molestiae fugiat tempore cum? Blanditiis impedit facilis soluta veniam eligendi! Dolore, fugit
+                        assumenda
+                        quo minus tempora praesentium? Assumenda minima quo hic eos nulla non optio veritatis
+                        perspiciatis?
+                        Optio minus error consequuntur soluta, provident totam sequi enim nostrum aliquid quo
+                        voluptatibus
+                        repudiandae suscipit cum reprehenderit distinctio? Eum eveniet ipsam cumque, soluta consectetur
+                        ratione
+                        sed, illo quasi assumenda aliquid eaque explicabo recusandae.</p>
+                    <p class="mt-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque
+                        maxime
+                        nihil architecto modi pariatur esse reiciendis impedit labore nam odio consequatur, similique ab
+                        ad.
+                        Autem a commodi in, facilis numquam animi sunt harum cumque consectetur officiis quo porro
+                        cupiditate,
+                        molestiae fugiat tempore cum? Blanditiis impedit facilis soluta veniam eligendi! Dolore, fugit
+                        assumenda
+                        quo minus tempora praesentium? Assumenda minima quo hic eos nulla non optio veritatis
+                        perspiciatis?
+                        Optio minus error consequuntur soluta, provident totam sequi enim nostrum aliquid quo
+                        voluptatibus
+                        repudiandae suscipit cum reprehenderit distinctio? Eum eveniet ipsam cumque, soluta consectetur
+                        ratione
+                        sed, illo quasi assumenda aliquid eaque explicabo recusandae.</p>
+                </div>
+                <div class="flex ">
+                    <button
+                        class="rounded-lg bg-orange-400 px-4 py-2 transition-all hover:bg-orange-500 hover:text-white">Buy
+                        This</button>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="flex-none text-center bg-slate-900 p-4 text-white">
-            Created By Ahmad Ridho Ramadhan
-            <div class="flex justify-center flex-wrap">
-                <a href="mailto:ahmadridhor02@gmail.com" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/email1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="email" />
-                </a>
+    <footer class="flex-none text-center bg-slate-900 p-4 text-white">
+        Created By Ahmad Ridho Ramadhan
+        <div class="flex justify-center flex-wrap">
+            <a href="mailto:ahmadridhor02@gmail.com" class="p-1.5">
+                <img src="/src/assets/icon/email1.png" class="m-1.5 h-6 sm:h-7" alt="email" />
+            </a>
 
-                <a href="https://wa.me/62882020539449" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/whatsapp1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="whatsapp" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/instagram1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="instagram" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/github1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="github" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/twitter1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="twitter" />
-                </a>
-            </div>
-        </footer>
+            <a href="https://wa.me/62882020539449" class="p-1.5">
+                <img src="/src/assets/icon/whatsapp1.png" class="m-1.5 h-6 sm:h-7" alt="whatsapp" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/src/assets/icon/instagram1.png" class="m-1.5 h-6 sm:h-7" alt="instagram" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/src/assets/icon/github1.png" class="m-1.5 h-6 sm:h-7" alt="github" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/src/assets/icon/twitter1.png" class="m-1.5 h-6 sm:h-7" alt="twitter" />
+            </a>
+        </div>
+    </footer>
 
-        <script src="/src/js/ajax.js"></script>
-    </body>
+    <script src="/src/app/js/navbar.js"></script>
+</body>
+
 </html>

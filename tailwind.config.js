@@ -3,13 +3,16 @@
 module.exports = {
   content: ["index.html", "./**/**/**/*.html", "./**/**/**/**/*.html"],
   theme: {
-    backgroundSize:{
-      'auto': 'auto',
-      'cover': 'cover',
-      'contain': 'contain',
-      'half' : "50%",
+    extend: {
+      backgroundSize:{
+        'half' : "50%",
+      },
+      colors: {
+        primary: '#fca311',
+        secondary: '#14213d',
+        tertiary: '#e5e5e5',
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
