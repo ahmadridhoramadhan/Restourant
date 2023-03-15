@@ -1,130 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lorisv Restaurant</title>
-        <link rel="stylesheet" href="/src/css/main.css" />
-    </head>
-    <body class="flex flex-col h-screen">
-        <main class="flex-auto">
-            <div class="flex h-full items-center justify-center">
-                <div class="bg-slate-100 shadow-lg rounded-md p-5">
-                    <div class="pb-2 mb-3 border-b-2">
-                        <a href="javascript:history.go(-1)">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="currentColor"
-                                class="w-6 h-6">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M15.75 19.5L8.25 12l7.5-7.5" />
-                            </svg>
-                        </a>
-                    </div>
 
-                    <div class="flex gap-5">
-                        <img src="" alt="" class="w-32 h-32 md:w-52 md:h-52" />
-                        <div>
-                            <p>name of product</p>
-                            <p class="text-xs">Rp 80.000,00</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorisv Restaurant</title>
+    <link rel="stylesheet" href="/Restourant/src/css/main.css" />
+</head>
 
-                            <input
-                                type="number"
-                                name=""
-                                id=""
-                                class="w-10 mt-10 bg-transparent border-b-2 border-gray-600 mb-4" />
-                            <p class="border-b-2 text-sm border-gray-700">
-                                Rp 80.000.000,00
-                            </p>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <form action="/src/views/success.html">
-                            <input
-                                type="email"
-                                name=""
-                                id=""
-                                placeholder="Email"
-                                required
-                                class="w-full border-b-2 p-2 border-gray-700 bg-transparent my-2 ring-0" />
-                            <input
-                                type="text"
-                                name=""
-                                id=""
-                                placeholder="Addreas"
-                                class="my-2 bg-transparent w-full border-b-2 p-2 border-gray-700" />
-                            <label for="estimate" class="my-5"
-                                >Estimate
-                                <input
-                                    type="date"
-                                    name=""
-                                    id="estimate"
-                                    class="w-full border-b-2 border-gray-700 bg-transparent" />
-                            </label>
-                            <textarea
-                                name=""
-                                id=""
-                                cols="30"
-                                placeholder="add a comment if you have something to say"
-                                rows="10"
-                                class="my-2 bg-transparent w-full border-b-2 p-2 border-gray-700"></textarea>
-                            <a
-                                href="javascript:history.go(-1)"
-                                class="bg-slate-500 shadow-md rounded-md hover:bg-slate-700 transition-colors py-2 px-4 text-white mr-5"
-                                >Cencel
-                            </a>
-                            <button
-                                type="submit"
-                                class="bg-orange-500 shadow-md rounded-md hover:bg-orange-700 transition-colors py-2 px-4 text-white">
-                                Order
-                            </button>
-                        </form>
+<body class="flex flex-col h-screen">
+    <main class="flex-auto">
+        <div class="flex h-full items-center justify-center">
+            <div class="bg-slate-100 shadow-lg rounded-md p-5">
+                <div class="pb-2 mb-3 border-b-2">
+                    <a href="javascript:history.go(-1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="flex gap-5">
+                    <img src="" alt="" class="w-32 h-32 md:w-52 md:h-52" />
+                    <div>
+                        <p>name of product</p>
+                        <p class="text-xs">Rp 80.000,00</p>
+
+                        <input type="number" name="" id=""
+                            class="w-10 mt-10 bg-transparent border-b-2 border-gray-600 mb-4" />
+                        <p class="border-b-2 text-sm border-gray-700">
+                            Rp 80.000.000,00
+                        </p>
                     </div>
                 </div>
+                <div class="mt-5">
+                    <form action="/Restourant/src/views/success.html">
+                        <input type="email" name="" id="" placeholder="Email" required
+                            class="w-full border-b-2 p-2 border-gray-700 bg-transparent my-2 ring-0" />
+                        <input type="text" name="" id="" placeholder="Addreas"
+                            class="my-2 bg-transparent w-full border-b-2 p-2 border-gray-700" />
+                        <label for="estimate" class="my-5">Estimate
+                            <input type="date" name="" id="estimate"
+                                class="w-full border-b-2 border-gray-700 bg-transparent" />
+                        </label>
+                        <textarea name="" id="" cols="30" placeholder="add a comment if you have something to say"
+                            rows="10" class="my-2 bg-transparent w-full border-b-2 p-2 border-gray-700"></textarea>
+                        <a href="javascript:history.go(-1)"
+                            class="bg-slate-500 shadow-md rounded-md hover:bg-slate-700 transition-colors py-2 px-4 text-white mr-5">Cencel
+                        </a>
+                        <button type="submit"
+                            class="bg-orange-500 shadow-md rounded-md hover:bg-orange-700 transition-colors py-2 px-4 text-white">
+                            Order
+                        </button>
+                    </form>
+                </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="flex-none text-center bg-slate-900 p-4 text-white">
-            Created By Ahmad Ridho Ramadhan
-            <div class="flex justify-center flex-wrap">
-                <a href="mailto:ahmadridhor02@gmail.com" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/email1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="email" />
-                </a>
+    <footer class="flex-none text-center bg-slate-900 p-4 text-white">
+        Created By Ahmad Ridho Ramadhan
+        <div class="flex justify-center flex-wrap">
+            <a href="mailto:ahmadridhor02@gmail.com" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/email1.png" class="m-1.5 h-6 sm:h-7" alt="email" />
+            </a>
 
-                <a href="https://wa.me/62882020539449" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/whatsapp1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="whatsapp" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/instagram1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="instagram" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/github1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="github" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/twitter1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="twitter" />
-                </a>
-            </div>
-        </footer>
-    </body>
+            <a href="https://wa.me/62882020539449" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/whatsapp1.png" class="m-1.5 h-6 sm:h-7" alt="whatsapp" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/instagram1.png" class="m-1.5 h-6 sm:h-7" alt="instagram" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/github1.png" class="m-1.5 h-6 sm:h-7" alt="github" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/twitter1.png" class="m-1.5 h-6 sm:h-7" alt="twitter" />
+            </a>
+        </div>
+    </footer>
+</body>
+
 </html>

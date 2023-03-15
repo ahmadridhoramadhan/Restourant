@@ -1,181 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lorisv Restaurant</title>
-        <link rel="stylesheet" href="/src/css/main.css" />
-        <style>
-            body {
-                background-image: url("/src/asset/bg/bg-food1.png");
-                background-repeat: no-repeat;
-            }
-            main {
-                background-image: url("/src/asset/bg/bg-food2.png");
-                background-repeat: no-repeat;
-                background-position: bottom right;
-                background-size: contain;
-            }
-        </style>
-    </head>
-    <body class="flex flex-col h-screen bg-half">
-        <nav class="flex-none">
-            <div class="flex max-w-7xl mx-auto sm:my-5 items-center">
-                <a href="/index.html">
-                    <img src="" alt="logo" class="h-6 sm:h-7 inline" />
-                </a>
 
-                <div class="flex justify-center items-center flex-1 gap-5">
-                    <a href="../../index.html">About</a>
-                    <div>
-                        <a href="">List Food</a>
-                        <div class="bg-orange-600 h-0.5 w-full"></div>
-                    </div>
-                    <a href="/src/views/chef.html">Chef</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorisv Restaurant</title>
+    <link rel="stylesheet" href="/Restourant/src/css/main.css" />
+    <style>
+        body {
+            background-image: url("/Restourant/src/asset/bg/bg-food1.png");
+            background-repeat: no-repeat;
+        }
+
+        main {
+            background-image: url("/Restourant/src/asset/bg/bg-food2.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col h-screen bg-half">
+    <nav class="flex-none">
+        <div class="flex max-w-7xl mx-auto sm:my-5 items-center">
+            <a href="/index.html">
+                <img src="" alt="logo" class="h-6 sm:h-7 inline" />
+            </a>
+
+            <div class="flex justify-center items-center flex-1 gap-5">
+                <a href="../../index.html">About</a>
+                <div>
+                    <a href="">List Food</a>
+                    <div class="bg-orange-600 h-0.5 w-full"></div>
                 </div>
+                <a href="/Restourant/src/views/chef.html">Chef</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <main class="flex-auto">
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
-                <div id="displayContent" class="flex-auto">
-                    <div class="max-w-6xl sm:pt-28 mt-12 md:pt-32 md:pl-28 p-5">
-                        <div class="flex flex-col md:flex-row items-center">
-                            <img
-                                src="/src/asset/food/bigFood1.png"
-                                alt=""
-                                class="md:h-80 h-60 sm:h-72 flex-none mb-5" />
-                            <div>
-                                <p class="font-semibold italic text-4xl">
-                                    the title of food
-                                </p>
-                                <p class="pl-3">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Ut magnam omnis nulla iure
-                                    maiores suscipit, voluptatem quo aspernatur
-                                    dolores aut nobis ratione molestiae,
-                                    doloremque dicta saepe asperiores. Ducimus
-                                    magni architecto iusto itaque! Libero ipsa
-                                    voluptas, aspernatur delectus quisquam
-                                    repellat, et corporis culpa, cupiditate
-                                    iusto nostrum asperiores dolore sunt esse
-                                    consectetur itaque error placeat debitis
-                                    voluptate. Est soluta enim obcaecati minus
-                                    rerum consequatur vitae odio eligendi sit!
-                                    Nobis iusto autem sit?
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="mt-5 w-full flex">
-                            <a
-                                href="/src/views/paymentPage.html"
-                                class="ml-auto bg-blue-500 hover:bg-blue-700 py-2 px-5 text-white shadow-lg rounded-md transition-colors duration-300">
-                                Buy This
-                            </a>
+    <main class="flex-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+            <div id="displayContent" class="flex-auto">
+                <div class="max-w-6xl sm:pt-28 mt-12 md:pt-32 md:pl-28 p-5">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <img src="/Restourant/src/asset/food/bigFood1.png" alt=""
+                            class="md:h-80 h-60 sm:h-72 flex-none mb-5" />
+                        <div>
+                            <p class="font-semibold italic text-4xl">
+                                the title of food
+                            </p>
+                            <p class="pl-3">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ut magnam omnis nulla iure
+                                maiores suscipit, voluptatem quo aspernatur
+                                dolores aut nobis ratione molestiae,
+                                doloremque dicta saepe asperiores. Ducimus
+                                magni architecto iusto itaque! Libero ipsa
+                                voluptas, aspernatur delectus quisquam
+                                repellat, et corporis culpa, cupiditate
+                                iusto nostrum asperiores dolore sunt esse
+                                consectetur itaque error placeat debitis
+                                voluptate. Est soluta enim obcaecati minus
+                                rerum consequatur vitae odio eligendi sit!
+                                Nobis iusto autem sit?
+                            </p>
                         </div>
                     </div>
-                </div>
 
-                <div
-                    class="flex md:flex-col justify-center h-full flex-none select-none">
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/listFood.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food1.html">
-                            <img
-                                src="/src/asset/food/food1.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food2.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food2.html">
-                            <img
-                                src="/src/asset/food/food2.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food3.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food3.html">
-                            <img
-                                src="/src/asset/food/food3.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food4.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food4.html">
-                            <img
-                                src="/src/asset/food/food4.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
-                        </a>
-                    </div>
-                    <div class="my-5 select-none">
-                        <a
-                            href="/src/views/food/food5.html"
-                            class="buttonPage"
-                            data-fileHtml="/src/views/food/food5.html">
-                            <img
-                                src="/src/asset/food/food5.png"
-                                alt=""
-                                class="w-20 md:w-28 rounded-full" />
+                    <div class="mt-5 w-full flex">
+                        <a href="/Restourant/src/views/paymentPage.html"
+                            class="ml-auto bg-blue-500 hover:bg-blue-700 py-2 px-5 text-white shadow-lg rounded-md transition-colors duration-300">
+                            Buy This
                         </a>
                     </div>
                 </div>
             </div>
-        </main>
 
-        <footer class="flex-none text-center bg-slate-900 p-4 text-white">
-            Created By Ahmad Ridho Ramadhan
-            <div class="flex justify-center flex-wrap">
-                <a href="mailto:ahmadridhor02@gmail.com" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/email1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="email" />
-                </a>
-
-                <a href="https://wa.me/62882020539449" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/whatsapp1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="whatsapp" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/instagram1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="instagram" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/github1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="github" />
-                </a>
-                <a href="" class="p-1.5">
-                    <img
-                        src="/src/asset/icon/twitter1.png"
-                        class="m-1.5 h-6 sm:h-7"
-                        alt="twitter" />
-                </a>
+            <div class="flex md:flex-col justify-center h-full flex-none select-none">
+                <div class="my-5 select-none">
+                    <a href="/Restourant/src/views/listFood.html" class="buttonPage"
+                        data-fileHtml="/Restourant/src/views/food/food1.html">
+                        <img src="/Restourant/src/asset/food/food1.png" alt="" class="w-20 md:w-28 rounded-full" />
+                    </a>
+                </div>
+                <div class="my-5 select-none">
+                    <a href="/Restourant/src/views/food/food2.html" class="buttonPage"
+                        data-fileHtml="/Restourant/src/views/food/food2.html">
+                        <img src="/Restourant/src/asset/food/food2.png" alt="" class="w-20 md:w-28 rounded-full" />
+                    </a>
+                </div>
+                <div class="my-5 select-none">
+                    <a href="/Restourant/src/views/food/food3.html" class="buttonPage"
+                        data-fileHtml="/Restourant/src/views/food/food3.html">
+                        <img src="/Restourant/src/asset/food/food3.png" alt="" class="w-20 md:w-28 rounded-full" />
+                    </a>
+                </div>
+                <div class="my-5 select-none">
+                    <a href="/Restourant/src/views/food/food4.html" class="buttonPage"
+                        data-fileHtml="/Restourant/src/views/food/food4.html">
+                        <img src="/Restourant/src/asset/food/food4.png" alt="" class="w-20 md:w-28 rounded-full" />
+                    </a>
+                </div>
+                <div class="my-5 select-none">
+                    <a href="/Restourant/src/views/food/food5.html" class="buttonPage"
+                        data-fileHtml="/Restourant/src/views/food/food5.html">
+                        <img src="/Restourant/src/asset/food/food5.png" alt="" class="w-20 md:w-28 rounded-full" />
+                    </a>
+                </div>
             </div>
-        </footer>
+        </div>
+    </main>
 
-        <!-- <script src="/src/js/ajax.js"></script> -->
-    </body>
+    <footer class="flex-none text-center bg-slate-900 p-4 text-white">
+        Created By Ahmad Ridho Ramadhan
+        <div class="flex justify-center flex-wrap">
+            <a href="mailto:ahmadridhor02@gmail.com" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/email1.png" class="m-1.5 h-6 sm:h-7" alt="email" />
+            </a>
+
+            <a href="https://wa.me/62882020539449" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/whatsapp1.png" class="m-1.5 h-6 sm:h-7" alt="whatsapp" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/instagram1.png" class="m-1.5 h-6 sm:h-7" alt="instagram" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/github1.png" class="m-1.5 h-6 sm:h-7" alt="github" />
+            </a>
+            <a href="" class="p-1.5">
+                <img src="/Restourant/src/asset/icon/twitter1.png" class="m-1.5 h-6 sm:h-7" alt="twitter" />
+            </a>
+        </div>
+    </footer>
+
+    <!-- <script src="/Restourant/src/js/ajax.js"></script> -->
+</body>
+
 </html>
