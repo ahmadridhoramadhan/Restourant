@@ -721,10 +721,6 @@ video {
   height: 1.5rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-0\.5 {
   height: 0.125rem;
 }
@@ -743,14 +739,6 @@ video {
 
 .h-48 {
   height: 12rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .min-h-fit {
@@ -1019,6 +1007,10 @@ video {
 
 .bg-\[url\(\'\/src\/assets\/background\/bgText\.png\'\)\] {
   background-image: url('/src/assets/background/bgText.png');
+}
+
+.bg-\[url\(\'\/Restourant\/src\/assets\/background\/bgText\.png\'\)\] {
+  background-image: url('/Restourant/src/assets/background/bgText.png');
 }
 
 .bg-contain {
@@ -1396,6 +1388,10 @@ video {
 
   .md\:bg-\[url\(\'\/src\/assets\/background\/bgText\.png\'\)\] {
     background-image: url('/src/assets/background/bgText.png');
+  }
+
+  .md\:bg-\[url\(\'\/Restourant\/src\/assets\/background\/bgText\.png\'\)\] {
+    background-image: url('/Restourant/src/assets/background/bgText.png');
   }
 
   .md\:p-10 {
